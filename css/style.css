@@ -12,9 +12,10 @@
   margin:0;
 }
 
+/*
 body *{
   outline:auto;
-}
+} */
 body {
   background-image:linear-gradient(to bottom right, var(--main-blue), var(--gradient-blue));
   background-attachment:fixed;
