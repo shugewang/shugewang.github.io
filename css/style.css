@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Quicksand:wght@300;400;700&family=Zilla+Slab&display=swap');
 
+/*
 body *{
   border:2px solid red;
 } 
-
+*/
 
 :root{
   --main-blue:#18314F;
