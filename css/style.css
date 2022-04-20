@@ -12,10 +12,21 @@
   margin:0;
 }
 
-/*
+h1, h2, p, a{
+  color:white;
+}
+
+h1{
+  font-size:2.5rem;
+}
+
+a{
+  text-decoration:none;
+}
+
 body *{
-  outline:auto;
-} */
+  border:2px solid red;
+} 
 
 body {
   background-image:linear-gradient(to bottom right, var(--main-blue), var(--gradient-blue));
@@ -29,52 +40,53 @@ body {
   display:flex;
   position:fixed;
   top:0;
-  right:0;
   justify-content:flex-end;
   height:2rem;
-  width:100%;
+  width:100vw;
   padding:1rem;
-  background-color:var(--main-teal)
+  background-color:var(--main-teal);
 }
 
-.navigations{
+#navigations{
   display:flex;
   list-style:none;
+  justify-content:flex-end;
+  margin:0 5rem;
+  gap:1rem;
+  flex:1;
 } 
 
 .nav-link{
-  display:block;
   font-size:1.5rem;
-  padding:0 1rem;
-  text-decoration:none;
-  color:white;
   font-weight:bold;
+}
+
+main{
+  margin:0 5vw;
 }
 
 #welcome-section{
   display:flex;
-  flex-direction:column;
-  justify-content:center;
-  /*align-items:center;*/
-  margin: 0 20vh;
   height:100vh;
-}
-
-#name {
-  font-size:3rem;
-  margin:5rem 0 ;
-}
-
-#projects{
-  display:flex;
   flex-direction:column;
   justify-content:center;
-  margin:5rem;
+  gap:1rem;
 }
 
-.project-tile{
+#name h1{
+  font-size:5rem;
+}
+
+#project-section{
   display:flex;
-  justify-content:space-between;
+  flex-direction:column;
+  justify-content:space-evenly;
+  height:50vh;
+}
+
+#project-tiles{
+  display:flex;
+  justify-content:space-evenly;
   flex-wrap:wrap;
 }
 
@@ -83,48 +95,23 @@ body {
   height:150px;
 }
 
-#projects a{
-  color:white;
-  text-decoration:none;
+.tile{
   text-align:center;
-  padding:1rem;
 }
 
-#projects p{
-  font-size:0.8rem;
-  display:inline;
-}
-h1, h2, p{
-  color:white;
-}
-
-@media only screen and (max-width:400px){
-  .project-tile{
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    background-color:white;
-  }
-}
-
-#contact{
+#contact-section{
   display:flex;
   flex-direction:column;
   justify-content:space-evenly;
-  padding: 5rem;
-  height:400px;
+  height:50vh;
 }
+
 #links{
   display:flex;
-  justify-content:space-between;
-  padding:0 5rem;
-
+  justify-content:space-evenly;
 } 
 
 .profile-link{
-  color:white;
-  text-decoration:none;
-  padding:1rem;
   font-size:2rem;
   font-weight:bold;
   font-family:"Zilla Slab", serif;
@@ -132,4 +119,8 @@ h1, h2, p{
 
 .profile-link:hover{
   color:var(--main-yellow);
+}
+
+footer{
+  background-color:var(--main-teal);
 }
