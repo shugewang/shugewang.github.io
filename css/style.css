@@ -7,9 +7,11 @@
 
 :root{
   --main-blue:#18314F;
-  --gradient-blue:#094287;
+  --gradient-blue:#3768A3;
+  --gradient-blue2:#65A1EB;
   --main-yellow:#E5D352;
-  --main-teal:#247B7B;
+  --main-green:#0A5E5E;
+  --main-teal:#18A1A1;
 }
 
 * {
@@ -30,11 +32,25 @@ a{
 }
 
 body {
-  background-image:linear-gradient(to bottom right, var(--main-blue), var(--gradient-blue));
-  background-attachment:fixed;
+  background:linear-gradient(135deg, var(--main-blue), var(--main-teal), var(--main-green));
+  animation: backgroundColour 10s infinite;
+  background-size:200%;
   font-family: 'Quicksand', sans-serif;
   font-size:20px;
 }
+
+@keyframes backgroundColour{
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100%{
+    background-position: 0% 50%;
+  }
+}
+
 
 #navbar{
   font-family:"Zilla Slab", serif;
@@ -45,7 +61,6 @@ body {
   height:2rem;
   width:100vw;
   padding:1rem;
-  background-color:var(--main-teal);
 }
 
 #navigations{
@@ -123,5 +138,5 @@ main{
 }
 
 footer{
-  background-color:var(--main-teal);
+  text-align:right;
 }
