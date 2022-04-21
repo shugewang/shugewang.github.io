@@ -124,10 +124,13 @@ main{
 .project-image{
   width:250px;
   height:150px;
+  border-radius:1rem;
+  margin: 1rem 0 0 0;
 }
 
 .tile{
   text-align:center;
+  margin:1rem;
 }
 
 #contact-section{
