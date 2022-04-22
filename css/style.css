@@ -20,24 +20,25 @@ body *{
   margin:0;
 }
 
+body {
+  background:linear-gradient(135deg, var(--main-blue), var(--main-teal), var(--main-green));
+  animation: backgroundColour 20s infinite;
+  background-size:400%;
+  font-family:"Zilla Slab", serif;
+  font-size:20px;
+}
+
 h1, h2, p, a{
   color:white;
 }
 
 h1{
-  font-size:2.5rem;
+  font-size:3rem;
+  /*font-family: 'Quicksand', sans-serif;*/
 }
 
 a{
   text-decoration:none;
-}
-
-body {
-  background:linear-gradient(135deg, var(--main-blue), var(--main-teal), var(--main-green));
-  animation: backgroundColour 20s infinite;
-  background-size:400%;
-  font-family: 'Quicksand', sans-serif;
-  font-size:20px;
 }
 
 @keyframes backgroundColour{
@@ -80,7 +81,7 @@ body {
   padding:0.3rem;
 }
 
-.nav-link:hover{
+.nav-link:hover, .profile-link:hover{
   background-color:white;
   color:var(--main-teal);
   border-radius:0.5rem;
@@ -100,12 +101,23 @@ main{
 }
 
 #name h1{
-  font-size:5rem;
+  font-size:clamp(3rem, 20vw, 6rem);
 }
 
-@keyframes typing{
-  from {width: 0}
-  to {width: 100%}
+#intro{
+  font-family:"Zilla Slab", serif;
+  font-size:2rem;
+}
+
+#about-section{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  gap:1rem;
+  min-height:100vh;
+  font-size:1.5rem;
+  line-height:1.6;
+  text-align:justify;
 }
 
 #project-section{
@@ -131,7 +143,19 @@ main{
 .tile{
   text-align:center;
   margin:1rem;
+  padding:1rem;
 }
+
+.tile a{
+  font-size:1.5rem;
+  font-weight:bold;
+}
+
+.tile:hover {
+  border-radius:0.5rem;
+  outline: 2px solid white;
+}
+
 
 #contact-section{
   display:flex;
@@ -149,11 +173,9 @@ main{
   font-size:2rem;
   font-weight:bold;
   font-family:"Zilla Slab", serif;
+  padding:0.3rem;
 }
 
-.profile-link:hover{
-  color:var(--main-yellow);
-}
 
 footer{
   position:relative;
