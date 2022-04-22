@@ -21,24 +21,11 @@ body *{
 }
 
 body {
-  background:linear-gradient(135deg, var(--main-blue), var(--main-teal), var(--main-green));
-  animation: backgroundColour 20s infinite;
+  background:linear-gradient(135deg, var(--main-blue), var(--main-green));
+  animation: backgroundColour 30s infinite;
   background-size:400%;
   font-family:"Zilla Slab", serif;
   font-size:20px;
-}
-
-h1, h2, p, a{
-  color:white;
-}
-
-h1{
-  font-size:3rem;
-  /*font-family: 'Quicksand', sans-serif;*/
-}
-
-a{
-  text-decoration:none;
 }
 
 @keyframes backgroundColour{
@@ -53,6 +40,18 @@ a{
   }
 }
 
+h1, h2, p, a{
+  color:white;
+}
+
+h1{
+  font-size:3rem;
+  /*font-family: 'Quicksand', sans-serif;*/
+}
+
+a{
+  text-decoration:none;
+}
 
 #navbar{
   font-family:"Zilla Slab", serif;
@@ -83,7 +82,7 @@ a{
 
 .nav-link:hover, .profile-link:hover{
   background-color:white;
-  color:var(--main-teal);
+  color:var(--main-blue);
   border-radius:0.5rem;
 }
 
