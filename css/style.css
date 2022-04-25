@@ -59,9 +59,10 @@ a{
   position:fixed;
   top:0;
   justify-content:flex-end;
-  height:2rem;
+  align-items:center;
+  height:3rem;
   width:100vw;
-  padding:1rem;
+
   z-index:1;
 }
 
@@ -69,15 +70,17 @@ a{
   display:flex;
   list-style:none;
   justify-content:flex-end;
-  margin:0 5rem;
-  gap:2rem;
-  flex:1;
+  margin:0 4rem;
+  gap:1rem;
+
 } 
 
 .nav-link{
   font-size:1.5rem;
   font-weight:bold;
   padding:0.3rem;
+  display:flex;
+  align-items: center;
 }
 
 .nav-link:hover, .profile-link:hover{
@@ -89,6 +92,9 @@ a{
 main{
   margin: 0 5vw;
   position:relative;
+  display: flex;
+  flex-direction: column;
+  gap: 5vh;
 }
 
 #welcome-section{
@@ -123,7 +129,7 @@ main{
   display:flex;
   flex-direction:column;
   justify-content:space-evenly;
-  min-height:50vh;
+  min-height:100vh;
 }
 
 #project-tiles{
@@ -160,7 +166,7 @@ main{
   display:flex;
   flex-direction:column;
   justify-content:space-evenly;
-  min-height:50vh;
+  min-height:20vh;
 }
 
 #links{
